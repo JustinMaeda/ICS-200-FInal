@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
     <style>
-        body,h1,h2,h3,h4,h5,h6 {font-family: "Kanit", sans-serif}
+        @font-face {
+            font-family: Blurple;
+            src: url(Blurple.otf);
+        }
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Blurple", sans-serif; color:#CDFAFA}
         .w3-bar-block .w3-bar-item {padding:20px}
     </style>
 </head>
-<body>
+<body style="background-color:#091428">
     <!--Sidebar-->
-    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="Sidebar">
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px;background-color:#0A1428" id="Sidebar">
         <a href="javascript:void(0)" onclick="sidebar_close()"
            class="w3-bar-item w3-button">Close Menu</a>
         <a href="#major_regions" onclick="w3_close()" class="w3-bar-item w3-button">Major Regions</a>
@@ -21,7 +25,7 @@
     </nav>
     <!--Top Section-->
     <div>
-        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-xlarge" style="max-width:1600px;margin:auto;background-color:#091428">
             <div class="w3-button w3-padding-16 w3-left" onclick="sidebar_open()">☰</div>
             <div class="w3-center w3-padding-16">LoL Esports Guide</div>
         </div>
@@ -30,51 +34,51 @@
     <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
         <img class="w3-image" src="Images/Summer_Finals.jpg" alt="Worlds Finals" width="1500" height="800">
         <div class="w3-display-middle w3-center">
-            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>LoL</b></span> <span class="w3-hide-small w3-text-light-grey">ESPORTS</span></h1>
+            <h1 class="w3-jumbo w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>LoL</b></span> <span class="w3-hide-small w3-text-light-grey">ESPORTS</span></h1>
         </div>
     </header>
     <!--Content Section-->
-    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+    <div class="w3-main w3-content w3-padding " style="max-width:1200px;margin-top:100px,background-color:#0A1428">
         <div class="w3-container w3-padding-32" id="major_regions">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Major Regions</h3>
             <div class="w3-row-padding">
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/LCK.png" alt="LCK" style="width:100%">
-                    <h3>LCK</h3>
+                    <h3 style="color:#C89B3C">LCK</h3>
                     <p class="w3-opacity">Korea</p>
                     <p>
                         <a href="https://lolesports.com/standings/lck/lck_spring_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/LCS.png" alt="LCS" style="width:100%">
-                    <h3>LCS</h3>
+                    <h3 style="color:#C89B3C">LCS</h3>
                     <p class="w3-opacity">North America</p>
                     <p>
                         <a href="https://lolesports.com/standings/lcs/lcs_spring_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/LEC.png" alt="LEC" style="width:100%">
-                    <h3>LEC</h3>
+                    <h3 style="color:#C89B3C">LEC</h3>
                     <p class="w3-opacity">Europe</p>
                     <p>
                         <a href="https://lolesports.com/standings/lec/lec_spring_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/LPL.png" alt="LPL" style="width:100%">
-                    <h3>LPL</h3>
+                    <h3 style="color:#C89B3C">LPL</h3>
                     <p class="w3-opacity">China</p>
                     <p>
                         <a href="https://lolesports.com/standings/lpl/lpl_spring_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
@@ -86,71 +90,71 @@
             <div class="w3-row-padding">
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/LJL.png" alt="LJL" style="width:100%">
-                    <h3>LJL</h3>
+                    <h3 style="color:#C89B3C">LJL</h3>
                     <p class="w3-opacity">Japan</p>
                     <p>
                         <a href="https://lolesports.com/standings/ljl-japan/ljl_spring_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/TCL.png" alt="TCL" style="width:100%">
-                    <h3>TCL</h3>
+                    <h3 style="color:#C89B3C">TCL</h3>
                     <p class="w3-opacity">Turkey</p>
                     <p>
                         <a href="https://lolesports.com/standings/turkiye-sampiyonluk-ligi/tcl_spring_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/LCO.png" alt="LCO" style="width:100%">
-                    <h3>LCO</h3>
+                    <h3 style="color:#C89B3C">LCO</h3>
                     <p class="w3-opacity">Australia</p>
                     <p>
                         <a href="https://lolesports.com/standings/lco/lco_spring_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/PCS.png" alt="PCS" style="width:100%">
-                    <h3>PCS</h3>
+                    <h3 style="color:#C89B3C">PCS</h3>
                     <p class="w3-opacity">Pacific</p>
                     <p>
                         <a href="https://lolesports.com/standings/pcs/pcs_spring_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/CBLOL.png" alt="CBLOL" style="width:100%">
-                    <h3>CBLOL</h3>
+                    <h3 style="color:#C89B3C">CBLOL</h3>
                     <p class="w3-opacity">Brazil</p>
                     <p>
                         <a href="https://lolesports.com/standings/cblol-brazil/cblol_split_1_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/VCS.png" alt="VCS" style="width:100%">
-                    <h3>VCS</h3>
+                    <h3 style="color:#C89B3C">VCS</h3>
                     <p class="w3-opacity">Vietnam</p>
                     <p>
                         <a href="https://lolesports.com/standings/vcs/vcs_spring_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
                 <div class="w3-col l3 m6 w3-margin-bottom">
                     <img src="Images/LLA.png" alt="LLA" style="width:100%">
-                    <h3>LLA</h3>
+                    <h3 style="color:#C89B3C">LLA</h3>
                     <p class="w3-opacity">Latin America</p>
                     <p>
                         <a href="https://lolesports.com/standings/lla/lla_opening_2024/regular_season">
-                            <button class="w3-button w3-light-grey w3-block">Learn More</button>
+                            <button style="background-color:#010A13;border-radius: 6px" class="w3-button w3-block">Learn More</button>
                         </a>
                     </p>
                 </div>
